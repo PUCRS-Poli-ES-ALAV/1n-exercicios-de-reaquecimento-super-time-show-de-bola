@@ -2,11 +2,12 @@
 #include<stdio.h>
 double sumfraction0(int n, double acc) {
     if (n == 0) return acc;
-    return sumfraction0(n - 1, acc + 1/n);
+   
+    return sumfraction0(n - 1, acc + 1.0 / n);
 
 }
 double sumfraction(int n) {
-    sumfraction0(n, 0);
+    return sumfraction0(n, 0.0);
 } 
 int main () {
 
